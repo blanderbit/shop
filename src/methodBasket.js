@@ -6,14 +6,14 @@ let method = {
             basketContent.style.height = "530px"
             basketModal.style.overflowY = 'hidden'
         }else{
-            console.log(basket.length)
             basketContent.style.height = "auto"
         }
         if(window.innerHeight <= 630){
             basketModal.style.overflowY = 'scroll'
         }
-        if(window.innerWidth <= 500 && basket.length > 1){
+        if(window.innerWidth <= 720 && basket.length > 1){
             basketContent.style.height = "auto"
+            basketModal.style.overflowY = 'scroll'
         }
     }
 }

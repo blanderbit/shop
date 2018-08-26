@@ -43,19 +43,21 @@ let all ={
         modal.style.display = 'block'
         modal.style.top = window.pageYOffset + 'px'
         modal.style.overflowY = 'scroll'
-        if(nameModal == "#modalBasket"){
+        if(nameModal == "#modalBasket"){console.log(basket.length)
             if(basket.length <= 2) {
                 content.style.height = "530px"
                 modal.style.overflowY = 'hidden'
             }else {
-                
                 content.style.height = "auto"
             }
+            console.log('window.innerWidth <= 720 && basket.length > 1',window.innerWidth <= 720 && basket.length > 1)
             if(window.innerHeight <= 630){
                 modal.style.overflowY = 'scroll'
             }
-            if(window.innerWidth <= 500 && basket.length > 1){
+
+            if(window.innerWidth <= 720 && basket.length > 1){
                 content.style.height = "auto"
+                modal.style.overflowY = 'scroll'
             }
         }else{
             if(love.length <= 2) {
@@ -67,8 +69,9 @@ let all ={
             if(window.innerHeight <= 630){
                 modal.style.overflowY = 'scroll'
             }
-            if(window.innerWidth <= 500 && love.length > 1){
+            if(window.innerWidth <= 720 && love.length > 1){
                 content.style.height = "auto"
+                modal.style.overflowY = 'scroll'
             }
         }
     }

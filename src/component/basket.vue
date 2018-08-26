@@ -58,7 +58,6 @@
                 all.counts(min, max, step,price,count,newPrice,index,'.amount','.price','.allprice')
             },
             remove:function(index){
-                console.log(index)
                 basket.splice(index,1)
                 method.modal()
             },

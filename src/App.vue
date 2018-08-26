@@ -57,13 +57,13 @@ export default {
             if(window.innerHeight <= 630){
                 basketModal.style.overflowY = 'scroll'
             }
-            if(window.innerWidth <= 500 && love.length > 1){
+            if(window.innerWidth <= 720 && love.length > 1){
                 basketContent.style.height = "auto"
             }
             if(window.innerHeight <= 630){
                 modalLikes.style.overflowY = 'scroll'
             }
-            if(window.innerWidth <= 500 && love.length > 1){
+            if(window.innerWidth <= 720 && love.length > 1){
                 likesContent.style.height = "auto"
             }
         }

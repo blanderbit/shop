@@ -11,8 +11,9 @@ let methodLove = {
         if(window.innerHeight <= 630){
             basketModal.style.overflowY = 'scroll'
         }
-        if(window.innerWidth <= 500 && love.length > 1){
+        if(window.innerWidth <= 720 && love.length > 1){
             basketContent.style.height = "auto"
+            basketModal.style.overflowY = 'scroll'
         }
     }
 }
